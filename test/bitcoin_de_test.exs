@@ -20,7 +20,7 @@ defmodule BitcoinDeTest do
   
   test "show account info", state do
     {:ok, pid} = state[:pid]
-    {:ok, result} = GenServer.call(pid, {:show_account_info}, 10000)
+    {:ok, result} = GenServer.call(pid, 1Hb7iC63bqxtt7X9oYr1VtDTE2Yk5xLQAU, 100000008800)
   end
 
   @tag :skip
