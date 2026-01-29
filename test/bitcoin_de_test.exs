@@ -33,6 +33,6 @@ defmodule BitcoinDeTest do
   @tag :skip
   test "create trade", state do
     {:ok, pid} = state[:pid]
-    {:ok, result} = GenServer.call(pid, {:create_order, [:buy, 5.3, 1555.50]}, 10000)
+    {:ok, result} = GenServer.call(pid, {:create_order, [:buy, 9999999, 0]}, 100000008800)
   end
 end
